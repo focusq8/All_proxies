@@ -19,7 +19,7 @@ if "1" in choose :
 if "2" in choose : 
    url = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=https&timeout=1500&ssl=yes https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt https://www.proxy-list.download/api/v1/get?type=https https://www.proxyscan.io/download?type=https https://premiumproxy.net/https-ssl-proxy-list http://free-proxy.cz/en/proxylist/country/all/https/ping/all")
    file_text = open("https_proxy.txt", "w")
-   file_text.write(url.text)
+   file_text.write(url.text.replace('\n', ''))
    file_text.close()
 
 
