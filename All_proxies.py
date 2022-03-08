@@ -52,19 +52,9 @@ if "3" in choose :
 if "4" in choose :
    url =requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt")
    url1 =requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&timeout=1500&ssl=yes")
-   url2 =requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt")
-   url3 =requests.get("https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt")
-   url4 =requests.get("https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt")
-   url5 =requests.get("https://raw.githubusercontent.com/UserR3X/proxy-list/main/socks4.txt")
-   url6 =requests.get("https://www.proxy-list.download/api/v1/get?type=socks4")
    file_text = open("proxies.txt", "a")
    file_text.write(url.text.replace('\n\n', ''))
    file_text.write(url1.text.replace('\n\n', ''))
-   file_text.write(url2.text.replace('\n\n', ''))
-   file_text.write(url3.text.replace('\n\n', ''))
-   file_text.write(url4.text.replace('\n\n', ''))
-   file_text.write(url5.text.replace('\n\n', ''))
-   file_text.write(url6.text.replace('\n\n', ''))
    file_text.close()
 
 if "5" in choose : 
